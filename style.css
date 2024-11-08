@@ -21,7 +21,6 @@ html,body{
     margin-right: 1%;
     margin-bottom: 1%;
 }
-
 .blocktittle{ /*A parte de cima do bloco do chat*/
     background-color: rgb(155, 14, 131);
     width: 500px;
@@ -30,13 +29,11 @@ html,body{
     flex-direction: row;
     justify-content: flex-start;
 }
-
 #block { /*A parte branca do Chat*/
     background-color: #FFFCE6;
     width: 500px;
     height: 600px;
 }
-
 #blockchat{ /*A parte de baixo do bloco do chat*/
     background-color: rgb(155, 14, 131);
     width: 500px;
@@ -45,7 +42,6 @@ html,body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
 }
 #lucyClose{ /*A figura grande da Lucy no site*/
     position: fixed;
