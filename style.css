@@ -41,9 +41,6 @@ html,body{
     padding: 0; /* Garante que não há espaçamento interno indesejado */
     z-index: 10;/* Garante que fique acima de outros elementos*/
 
-    /*flex-direction:column;
-    justify-content: space-around;
-    align-items: flex-start;*/
 }
 .elemento{
     position: relative;
@@ -90,8 +87,56 @@ html,body{
     border:2px solid black ;
     border-radius:20px 20px 20px 20px ;
 }
-#button{
-    background-color: pink;
+
+/*SESSÃO DO BOTÃO*/
+.btn-animado {
+    border: 2px solid;
+    border-radius: 10px;
+    height: 25px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px; /*Reduz o tamanho da fonte*/
+    box-shadow: 4px 4px 0 00px black; 
+
+
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background: #eb27b0;
+    border: none;
+    cursor: pointer;
+    overflow: hidden; /* Importante para conter a animação dentro do botão */
+    transition: background-color 0.3s ease;
+}
+
+.btn-animado:hover {
+    background-color: #ff0095; /* Muda a cor ao passar o mouse */
+}
+
+.btn-animado:active {
+    background-color: #ff8ddd; /* Cor ao clicar */
+}
+
+.btn-animado::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 0, 140, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.btn-animado:active::after {
+    transform: translate(-50%, -50%) scale(1); /* Expande o círculo */
+    opacity: 0; /* Faz o efeito desaparecer ao final */
 }
 
 @keyframes subirDescer { /*Animação do coração*/
