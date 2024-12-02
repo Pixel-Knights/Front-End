@@ -30,11 +30,34 @@ html,body{
     flex-direction: row;
     justify-content: flex-start;
 }
-.lucyCharacter{
+.lucyContainer{/*Edita o conjunto da imagem da Lucy + Balão de coração*/
+    position: fixed;
     display: flex;
-    flex-direction:column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 0; /* Cola na borda inferior */
+    right: 0; /* Cola na borda direita */
+    margin: 0;/* Remove qualquer margem extra */
+    padding: 0; /* Garante que não há espaçamento interno indesejado */
+    z-index: 10;/* Garante que fique acima de outros elementos*/
+
+    /*flex-direction:column;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;*/
+}
+.elemento{
+    position: relative;
+}
+#heart{ /*Balão de Coração*/
+    animation: subirDescer 2s infinite; 
+    position: absolute;
+    top:-20px;
+    left:-45px;
+}
+#lucyClose{ /*A figura grande da Lucy no site com boca fechada*/
+    position: relative;
+    width: 350px;
+    height: auto;   
 
 }
 
@@ -53,13 +76,7 @@ html,body{
     align-items: center;
 }
 
-#heart{ /*Balão de Coração*/
-    animation: subirDescer 2s infinite; 
-}
-#lucyClose{ /*A figura grande da Lucy no site com boca fechada*/
-    width: 350px;
-    height: auto;   
-}
+
 
 #lucyProfilePicture{ /*A imagem de perfil da Lucy*/ 
     height: 73px;
