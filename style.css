@@ -1,19 +1,27 @@
 
 html,body{
-    background-color: rgb(179, 179, 179); /*Muda a cor do fundo do site*/
     margin: 0; /*Se der erro, a culpa é dessa linha */
+    background-color: rgb(172, 56, 162); /*Muda a cor do fundo do site*/
 }
 
 /* [ALTERAÇAO DE CORES DO SITE] */
 
+.site{
+    border: 2px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
 
 /*Conjunto de Aplicações para o código todo*/
 :root{
     --yellow: #ffd523;
     --white: #fff;
-    --black: #000;
+    --black: #530439;
     --grey:  rgb(92, 92, 86);
-    --lightgrey:  rgb(179, 179, 179);
+    --lightgrey:  rgb(235, 80, 222);;
 
     /*Código para mudar o seletor de BODY atual*/
 *{
