@@ -19,9 +19,11 @@ html,body{
 :root{
     --yellow: #ffd523;
     --white: #fff;
-    --black: #530439;
+    --black: #680F65;
     --grey:  rgb(92, 92, 86);
-    --lightgrey:  rgb(235, 80, 222);;
+    --lightgrey:  #4E1282;
+    --pink: #821246;
+    --corClara: #D052A9;
 
     /*Código para mudar o seletor de BODY atual*/
 *{
@@ -33,21 +35,23 @@ html,body{
 }
 
 .light-theme{
---background: var(--lightgrey);
+
 --fontColor: var(--white);
 /*Adicionando o Botão*/
---background: var(--lightgrey);
+--background: var(--corClara);
 --botaoBg:  var(--black);
 --botaoFontColor:var(--yellow);
+--blockColor: white;
 }
 
 .dark-theme{
 --background: var(--black);
---fontColor: var(--yellow);
+--fontColor: var(--white);
 /*Adicionando o Botão*/
 --background: var(--black);
 --botaoBg:  var(--yellow);
 --botaoFontColor:var(--black);
+--blockColor: var(--pink);
 
 }
 .botão :focus {outline-style: none;}
@@ -126,7 +130,7 @@ html,body{
 }
 
 #block { /*A parte branca do Chat*/
-    background-color: #FFFCE6;
+    background-color: var(--blockColor);
     width: 600px;
     height: 600px;
 }
