@@ -125,6 +125,7 @@ html,body{
     position: relative;
     width: 350px;
     height: auto;   
+    margin: 10;
 
 }
 
@@ -152,11 +153,13 @@ html,body{
 }
 #mensager{ /*Chat*/
     background-color: #FFFCE6;
+    color: black;
     width: 460px;
     height: 30px;
     border:2px solid black ;
     border-radius:20px 20px 20px 20px ;
 }
+
 
 /* [SESSÃO DO BOTÃO DE ENVIAR MENSAGEM ]*/
 .btn-animado {
